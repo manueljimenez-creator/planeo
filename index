@@ -1,9 +1,241 @@
 <!DOCTYPE html>
-<html>
-<head><title>Planeo - Soporte</title></head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soporte — Planeo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #FFFBEA;
+      color: #222222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #222222;
+      border-radius: 0 0 24px 24px;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    header .logo {
+      font-family: 'Arial Black', sans-serif;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #fbc502;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      color: #ffffff99;
+      font-size: 0.85rem;
+      margin-top: 6px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .hero-title span {
+      color: #fbc502;
+      background: #222222;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+
+    .contact-card {
+      background: #222222;
+      border-radius: 20px;
+      padding: 36px 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .contact-card .label {
+      font-size: 0.78rem;
+      color: #fbc502;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .contact-card .email-link {
+      display: inline-block;
+      font-family: 'Arial Black', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 3px solid #fbc502;
+      padding-bottom: 2px;
+    }
+
+    .contact-card .email-link:hover {
+      color: #fbc502;
+    }
+
+    .contact-card p {
+      color: #ffffff66;
+      font-size: 0.85rem;
+      margin-top: 14px;
+    }
+
+    .faq-section {
+      text-align: left;
+    }
+
+    .faq-section h2 {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #222;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid #e8e0cc;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      color: #222;
+    }
+
+    .faq-item p {
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    .faq-item a {
+      color: #222;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #fbc502;
+    }
+
+    .divider {
+      width: 48px;
+      height: 4px;
+      background: #fbc502;
+      border-radius: 2px;
+      margin: 40px auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid #e8e0cc;
+    }
+
+    footer a {
+      color: #222;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #fbc502;
+    }
+
+    .logo-footer {
+      font-family: 'Arial Black', sans-serif;
+      font-weight: 900;
+      color: #222222;
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
 <body>
-  <h1>Soporte de Planeo</h1>
-  <p>¿Tienes alguna pregunta o problema? Escríbenos a:</p>
-  <p><a href="mailto:support@planeoeo.com">support@planeoeo.com</a></p>
+
+<header>
+  <div class="logo">Planeo</div>
+  <p>Centro de Soporte</p>
+</header>
+
+<div class="container">
+
+  <h1 class="hero-title">¿En qué podemos <span>ayudarte?</span></h1>
+  <p class="subtitle">Estamos aquí para resolver cualquier duda sobre la app, tu cuenta o los eventos.</p>
+
+  <div class="contact-card">
+    <div class="label">Contacto directo</div>
+    <a class="email-link" href="mailto:support@planeoeo.com">support@planeoeo.com</a>
+    <p>Respondemos en un plazo de 24–48 horas hábiles.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="faq-section">
+    <h2>Preguntas frecuentes</h2>
+
+    <div class="faq-item">
+      <strong>¿Cómo me uno a un evento?</strong>
+      <p>Abre el evento desde la pestaña Plans, pulsa "Unirse" y sigue los pasos. Al completarlos recibirás un código QR personal para el check-in el día del evento.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>¿Cómo elimino mi cuenta?</strong>
+      <p>Puedes eliminar tu cuenta desde la app en <strong>Perfil → Ajustes → Eliminar cuenta</strong>. Todos tus datos serán borrados en un plazo máximo de 30 días. También puedes solicitarlo escribiéndonos a <a href="mailto:support@planeoeo.com">support@planeoeo.com</a>.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>¿Cómo me convierto en Host?</strong>
+      <p>Ve a tu Perfil y selecciona "Ser Host". Introduce tu teléfono de contacto y acepta las normas de conducta. A partir de ahí podrás crear y gestionar tus propios eventos.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>¿Cómo reporto contenido inapropiado?</strong>
+      <p>Desde cualquier evento, post o perfil de usuario encontrarás la opción de reportar contenido. Nuestro equipo revisará el reporte en el menor tiempo posible.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>¿Dónde está la política de privacidad?</strong>
+      <p>Puedes consultarla en <a href="./privacy.html">nuestra Política de Privacidad</a> o desde dentro de la app en Perfil → Ajustes → Legal.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <span class="logo-footer">Planeo</span>
+  © 2026 Planeo. Todos los derechos reservados. ·
+  <a href="./privacy.html">Política de Privacidad</a>
+</footer>
+
 </body>
 </html>
