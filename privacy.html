@@ -8,7 +8,7 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Georgia', serif;
+      font-family: Arial, sans-serif;
       background: #FFFBEA;
       color: #222222;
       line-height: 1.75;
@@ -33,13 +33,25 @@
       color: #ffffff99;
       font-size: 0.85rem;
       margin-top: 6px;
-      font-family: Arial, sans-serif;
     }
 
     .container {
       max-width: 720px;
       margin: 0 auto;
       padding: 48px 24px 80px;
+    }
+
+    .lang-switcher {
+      text-align: right;
+      margin-bottom: 24px;
+      font-size: 0.82rem;
+    }
+
+    .lang-switcher a {
+      font-weight: 700;
+      color: #222;
+      text-decoration: underline;
+      text-decoration-color: #fbc502;
     }
 
     h1 {
@@ -52,7 +64,6 @@
     .effective-date {
       font-size: 0.82rem;
       color: #666;
-      font-family: Arial, sans-serif;
       margin-bottom: 40px;
       padding-bottom: 24px;
       border-bottom: 2px solid #fbc502;
@@ -68,7 +79,6 @@
     }
 
     h3 {
-      font-family: Arial, sans-serif;
       font-size: 0.9rem;
       font-weight: 700;
       margin-top: 24px;
@@ -80,7 +90,6 @@
       font-size: 0.95rem;
       color: #333;
       margin-bottom: 12px;
-      font-family: Arial, sans-serif;
     }
 
     ul {
@@ -91,7 +100,6 @@
     ul li {
       font-size: 0.95rem;
       color: #333;
-      font-family: Arial, sans-serif;
       margin-bottom: 6px;
     }
 
@@ -120,7 +128,6 @@
       border-radius: 12px;
       padding: 20px 24px;
       margin: 32px 0;
-      font-family: Arial, sans-serif;
       font-size: 0.9rem;
     }
 
@@ -138,18 +145,25 @@
     footer {
       text-align: center;
       padding: 32px 24px;
-      font-family: Arial, sans-serif;
       font-size: 0.8rem;
       color: #999;
       border-top: 1px solid #e8e0cc;
     }
 
     footer .logo-footer {
+      font-family: 'Arial Black', sans-serif;
       font-weight: 900;
       color: #222222;
       font-size: 1rem;
       display: block;
       margin-bottom: 8px;
+    }
+
+    footer a {
+      color: #222222;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #fbc502;
     }
   </style>
 </head>
@@ -161,6 +175,10 @@
 </header>
 
 <div class="container">
+
+  <div class="lang-switcher">
+    🇬🇧 <a href="./privacy-en.html">View in English</a>
+  </div>
 
   <h1>Política de Privacidad</h1>
   <p class="effective-date">Fecha de entrada en vigor: 29 de enero de 2026</p>
@@ -257,7 +275,7 @@
       <li>El contenido publicado (eventos, posts, reseñas) podrá ser anonimizado en lugar de eliminado cuando sea necesario para preservar la integridad de la plataforma.</li>
       <li>Los datos requeridos por obligación legal (p.ej. registros fiscales) podrán conservarse durante el período legalmente exigido antes de su eliminación definitiva.</li>
     </ul>
-    <p><strong>11.3 Solicitud por correo:</strong> Si por cualquier motivo no puede acceder a la App, también puede solicitar la eliminación de su cuenta enviando un correo a <a href="mailto:support@planeoeo.com">support@planeoeo.com</a>.</p>
+    <p><strong>11.3 Solicitud por correo:</strong> Si por cualquier motivo no puede acceder a la App, también puede solicitar la eliminación de su cuenta enviando un correo a <a href="mailto:support@planeoeo.com">support@planeoeo.com</a> o visitando <a href="./delete-account.html">nuestra página de eliminación de cuenta</a>.</p>
   </div>
 
   <div class="section">
@@ -298,7 +316,11 @@
 
 <footer>
   <span class="logo-footer">Planeo</span>
-  © 2026 Planeo. Todos los derechos reservados.
+  © 2026 Planeo. Todos los derechos reservados.<br>
+  <a href="./index.html">Soporte</a> ·
+  <a href="./terms.html">Términos de uso</a> ·
+  <a href="./delete-account.html">Eliminar cuenta</a> ·
+  <a href="./privacy-en.html">Privacy Policy (EN)</a>
 </footer>
 
 </body>
