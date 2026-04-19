@@ -4,191 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eliminar cuenta — Planeo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #FFFBEA;
-      color: #222222;
-      line-height: 1.75;
-    }
-
-    header {
-      background: #222222;
-      border-radius: 0 0 24px 24px;
-      padding: 40px 24px 32px;
-      text-align: center;
-    }
-
-    header .logo {
-      font-family: 'Arial Black', sans-serif;
-      font-weight: 900;
-      font-size: 2rem;
-      color: #fbc502;
-      letter-spacing: -1px;
-    }
-
-    header p {
-      color: #ffffff99;
-      font-size: 0.85rem;
-      margin-top: 6px;
-    }
-
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
-
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 900;
-      font-family: 'Arial Black', sans-serif;
-      margin-bottom: 6px;
-    }
-
-    .subtitle {
-      font-size: 0.82rem;
-      color: #666;
-      margin-bottom: 40px;
-      padding-bottom: 24px;
-      border-bottom: 2px solid #fbc502;
-    }
-
-    h2 {
-      font-family: 'Arial Black', sans-serif;
-      font-size: 1rem;
-      font-weight: 900;
-      margin-top: 0;
-      margin-bottom: 12px;
-      color: #222222;
-    }
-
-    p {
-      font-size: 0.95rem;
-      color: #333;
-      margin-bottom: 12px;
-    }
-
-    ul, ol {
-      padding-left: 20px;
-      margin-bottom: 12px;
-    }
-
-    ul li, ol li {
-      font-size: 0.95rem;
-      color: #333;
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: #222222;
-      font-weight: 700;
-      text-decoration: underline;
-      text-decoration-color: #fbc502;
-    }
-
-    .section {
-      padding: 24px;
-      background: #ffffff;
-      border-radius: 16px;
-      border: 1px solid #e8e0cc;
-      margin-bottom: 12px;
-    }
-
-    .steps-box {
-      background: #222222;
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 12px;
-    }
-
-    .steps-box h2 {
-      color: #fbc502;
-      font-family: 'Arial Black', sans-serif;
-      font-size: 1rem;
-      font-weight: 900;
-      margin-bottom: 16px;
-    }
-
-    .steps-box ol {
-      padding-left: 20px;
-    }
-
-    .steps-box li {
-      color: #ffffff;
-      font-size: 0.95rem;
-      margin-bottom: 10px;
-      line-height: 1.5;
-    }
-
-    .steps-box li strong {
-      color: #fbc502;
-    }
-
-    .contact-card {
-      background: #222222;
-      border-radius: 16px;
-      padding: 28px 24px;
-      text-align: center;
-      margin-bottom: 12px;
-    }
-
-    .contact-card .label {
-      font-size: 0.78rem;
-      color: #fbc502;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .contact-card .email-link {
-      display: inline-block;
-      font-family: 'Arial Black', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      border-bottom: 3px solid #fbc502;
-      padding-bottom: 2px;
-    }
-
-    .contact-card .email-link:hover {
-      color: #fbc502;
-    }
-
-    .contact-card p {
-      color: #ffffff66;
-      font-size: 0.85rem;
-      margin-top: 12px;
-      margin-bottom: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 32px 24px;
-      font-size: 0.8rem;
-      color: #999;
-      border-top: 1px solid #e8e0cc;
-    }
-
-    footer .logo-footer {
-      font-family: 'Arial Black', sans-serif;
-      font-weight: 900;
-      color: #222222;
-      font-size: 1rem;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    footer a {
-      color: #222222;
-      font-weight: 700;
-      text-decoration: underline;
-      text-decoration-color: #fbc502;
-    }
+    body { font-family: 'DM Sans', sans-serif; background: #ffffff; color: #222222; line-height: 1.75; }
+    header { background: #222222; border-radius: 0 0 24px 24px; padding: 40px 24px 32px; text-align: center; }
+    header .logo { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 2rem; color: #fbc502; letter-spacing: -1px; }
+    header p { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-top: 6px; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: 1.6rem; font-weight: 900; font-family: 'Montserrat', sans-serif; margin-bottom: 6px; color: #222222; }
+    .subtitle { font-size: 0.82rem; color: #666666; margin-bottom: 40px; padding-bottom: 24px; border-bottom: 2px solid #fbc502; }
+    h2 { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 900; margin-top: 0; margin-bottom: 12px; color: #222222; }
+    p { font-size: 0.95rem; color: #333333; margin-bottom: 12px; }
+    ul, ol { padding-left: 20px; margin-bottom: 12px; }
+    ul li, ol li { font-size: 0.95rem; color: #333333; margin-bottom: 8px; }
+    a { color: #222222; font-weight: 700; text-decoration: underline; text-decoration-color: #fbc502; }
+    .section { padding: 24px; background: #ffffff; border-radius: 16px; border: 1px solid #eeeeee; margin-bottom: 12px; }
+    .steps-box { background: #222222; border-radius: 16px; padding: 24px; margin-bottom: 12px; }
+    .steps-box h2 { color: #fbc502; font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 900; margin-bottom: 16px; }
+    .steps-box ol { padding-left: 20px; }
+    .steps-box li { color: #ffffff; font-size: 0.95rem; margin-bottom: 10px; line-height: 1.5; }
+    .steps-box li strong { color: #fbc502; }
+    .contact-card { background: #222222; border-radius: 16px; padding: 28px 24px; text-align: center; margin-bottom: 12px; }
+    .contact-card .label { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; color: #fbc502; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; }
+    .contact-card .email-link { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 900; color: #ffffff; text-decoration: none; border-bottom: 3px solid #fbc502; padding-bottom: 2px; }
+    .contact-card .email-link:hover { color: #fbc502; }
+    .contact-card p { color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-top: 12px; margin-bottom: 0; }
+    footer { text-align: center; padding: 32px 24px; font-size: 0.8rem; color: #666666; border-top: 1px solid #eeeeee; }
+    footer .logo-footer { font-family: 'Montserrat', sans-serif; font-weight: 900; color: #222222; font-size: 1rem; display: block; margin-bottom: 8px; }
+    footer a { color: #222222; font-weight: 700; text-decoration: underline; text-decoration-color: #fbc502; }
   </style>
 </head>
 <body>
@@ -201,54 +47,54 @@
 <div class="container">
 
   <h1>Eliminar tu cuenta</h1>
-  <p class="subtitle">Puedes solicitar la eliminación permanente de tu cuenta y todos tus datos personales en cualquier momento.</p>
+  <p class="subtitle">Puedes solicitar la eliminaci&oacute;n permanente de tu cuenta y todos tus datos personales en cualquier momento.</p>
 
   <div class="steps-box">
-    <h2>Cómo eliminar tu cuenta desde la app</h2>
+    <h2>C&oacute;mo eliminar tu cuenta desde la app</h2>
     <ol>
       <li>Abre <strong>Planeo</strong> en tu dispositivo</li>
-      <li>Ve a la pestaña <strong>Perfil</strong></li>
+      <li>Ve a la pesta&ntilde;a <strong>Perfil</strong></li>
       <li>Pulsa el icono de <strong>Ajustes</strong> (engranaje, esquina superior derecha)</li>
-      <li>Desplázate hasta la sección <strong>Cuenta</strong></li>
+      <li>Despl&aacute;zate hasta la secci&oacute;n <strong>Cuenta</strong></li>
       <li>Pulsa <strong>Eliminar cuenta</strong></li>
-      <li>Lee la información y confirma la eliminación</li>
+      <li>Lee la informaci&oacute;n y confirma la eliminaci&oacute;n</li>
     </ol>
   </div>
 
   <div class="section">
-    <h2>¿Qué ocurre con tus datos?</h2>
+    <h2>Qu&eacute; ocurre con tus datos?</h2>
     <ul>
-      <li><strong>Eliminado inmediatamente:</strong> tu sesión será cerrada y no podrás acceder a tu cuenta.</li>
-      <li><strong>Eliminado en máx. 30 días:</strong> nombre, email, foto de perfil y demás datos identificativos.</li>
-      <li><strong>Anonimizado:</strong> el contenido publicado (eventos, posts, reseñas) puede conservarse de forma anónima para preservar la integridad de la plataforma.</li>
-      <li><strong>Conservado por obligación legal:</strong> registros técnicos o fiscales mínimos requeridos por la legislación aplicable, durante el período legalmente exigido.</li>
+      <li><strong>Eliminado inmediatamente:</strong> tu sesi&oacute;n ser&aacute; cerrada y no podr&aacute;s acceder a tu cuenta.</li>
+      <li><strong>Eliminado en m&aacute;x. 30 d&iacute;as:</strong> nombre, email, foto de perfil y dem&aacute;s datos identificativos.</li>
+      <li><strong>Anonimizado:</strong> el contenido publicado (eventos, posts, rese&ntilde;as) puede conservarse de forma an&oacute;nima para preservar la integridad de la plataforma.</li>
+      <li><strong>Conservado por obligaci&oacute;n legal:</strong> registros t&eacute;cnicos o fiscales m&iacute;nimos requeridos por la legislaci&oacute;n aplicable.</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>¿No tienes acceso a la app?</h2>
-    <p>Si no puedes acceder a la aplicación, puedes solicitar la eliminación de tu cuenta enviándonos un correo electrónico desde la dirección asociada a tu cuenta de Planeo. Responderemos en un plazo de 24–48 horas hábiles.</p>
+    <h2>No tienes acceso a la app?</h2>
+    <p>Si no puedes acceder a la aplicaci&oacute;n, puedes solicitar la eliminaci&oacute;n de tu cuenta envi&aacute;ndonos un correo electr&oacute;nico desde la direcci&oacute;n asociada a tu cuenta de Planeo. Responderemos en un plazo de 24-48 horas h&aacute;biles.</p>
   </div>
 
   <div class="contact-card">
-    <div class="label">Solicitar eliminación por correo</div>
-    <a class="email-link" href="mailto:support@planeoeo.com">support@planeoeo.com</a>
-    <p>Respuesta en 24–48 horas hábiles</p>
+    <div class="label">Solicitar eliminaci&oacute;n por correo</div>
+    <a class="email-link" href="mailto:hello@planeoeo.com">hello@planeoeo.com</a>
+    <p>Respuesta en 24-48 horas h&aacute;biles</p>
   </div>
 
   <div class="section">
-    <h2>¿Tienes alguna duda?</h2>
-    <p>Para más información sobre cómo tratamos tus datos, consulta nuestra <a href="./privacy.html">Política de Privacidad</a>. Si necesitas ayuda con cualquier otra cuestión, visita nuestro <a href="./index.html">Centro de Soporte</a>.</p>
+    <h2>Tienes alguna duda?</h2>
+    <p>Para m&aacute;s informaci&oacute;n sobre c&oacute;mo tratamos tus datos, consulta nuestra <a href="./privacy.html">Pol&iacute;tica de Privacidad</a>. Si necesitas ayuda con cualquier otra cuesti&oacute;n, visita nuestro <a href="./index.html">Centro de Soporte</a>.</p>
   </div>
 
 </div>
 
 <footer>
   <span class="logo-footer">Planeo</span>
-  © 2026 Planeo. Todos los derechos reservados.<br>
-  <a href="./index.html">Soporte</a> ·
-  <a href="./privacy.html">Política de Privacidad</a> ·
-  <a href="./terms.html">Términos de uso</a>
+  &copy; 2026 Planeo. Todos los derechos reservados.<br>
+  <a href="./index.html">Soporte</a> &middot;
+  <a href="./privacy.html">Privacidad</a> &middot;
+  <a href="./terms.html">Condiciones de Uso</a>
 </footer>
 
 </body>
