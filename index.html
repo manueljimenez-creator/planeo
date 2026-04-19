@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soporte — Planeo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #FFFBEA;
+      font-family: 'DM Sans', sans-serif;
+      background: #ffffff;
       color: #222222;
       min-height: 100vh;
       display: flex;
@@ -24,7 +27,7 @@
     }
 
     header .logo {
-      font-family: 'Arial Black', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 900;
       font-size: 2rem;
       color: #fbc502;
@@ -32,7 +35,7 @@
     }
 
     header p {
-      color: #ffffff99;
+      color: rgba(255,255,255,0.6);
       font-size: 0.85rem;
       margin-top: 6px;
     }
@@ -46,11 +49,12 @@
     }
 
     .hero-title {
-      font-family: 'Arial Black', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 1.8rem;
       font-weight: 900;
       margin-bottom: 12px;
       line-height: 1.2;
+      color: #222222;
     }
 
     .hero-title span {
@@ -62,6 +66,248 @@
 
     .subtitle {
       font-size: 1rem;
+      color: #666666;
+      margin-bottom: 48px;
+      line-height: 1.6;
+    }
+
+    .contact-card {
+      background: #222222;
+      border-radius: 20px;
+      padding: 36px 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .contact-card .label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem;
+      color: #fbc502;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .contact-card .email-link {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 3px solid #fbc502;
+      padding-bottom: 2px;
+    }
+
+    .contact-card .email-link:hover {
+      color: #fbc502;
+    }
+
+    .contact-card p {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.85rem;
+      margin-top: 14px;
+    }
+
+    .faq-section {
+      text-align: left;
+    }
+
+    .faq-section h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #222222;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #222222;
+    }
+
+    .faq-item p {
+      font-size: 0.88rem;
+      color: #666666;
+      line-height: 1.55;
+    }
+
+    .faq-item a {
+      color: #222222;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #fbc502;
+    }
+
+    .divider {
+      width: 48px;
+      height: 4px;
+      background: #fbc502;
+      border-radius: 2px;
+      margin: 40px auto;
+    }
+
+    .legal-links {
+      text-align: left;
+      margin-top: 32px;
+    }
+
+    .legal-links h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #222222;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .legal-grid { grid-template-columns: 1fr; }
+    }
+
+    .legal-link {
+      display: block;
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 14px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #222222;
+      font-weight: 500;
+      font-size: 0.88rem;
+      transition: border-color 0.2s;
+    }
+
+    .legal-link:hover {
+      border-color: #fbc502;
+    }
+
+    .legal-link span {
+      display: block;
+      font-size: 0.75rem;
+      color: #666666;
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.8rem;
+      color: #666666;
+      border-top: 1px solid #eeeeee;
+    }
+
+    footer a {
+      color: #222222;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: #fbc502;
+    }
+
+    .logo-footer {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      color: #222222;
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Planeo</div>
+  <p>Centro de Soporte</p>
+</header>
+
+<div class="container">
+
+  <h1 class="hero-title">En qu&eacute; podemos <span>ayudarte?</span></h1>
+  <p class="subtitle">Estamos aqu&iacute; para resolver cualquier duda sobre la app, tu cuenta o los eventos.</p>
+
+  <div class="contact-card">
+    <div class="label">Contacto directo</div>
+    <a class="email-link" href="mailto:hello@planeoeo.com">hello@planeoeo.com</a>
+    <p>Respondemos en un plazo de 24-48 horas h&aacute;biles.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="faq-section">
+    <h2>Preguntas frecuentes</h2>
+
+    <div class="faq-item">
+      <strong>C&oacute;mo me uno a un evento?</strong>
+      <p>Abre el evento desde la pesta&ntilde;a Plans, pulsa "Unirse" y sigue los pasos. Al completarlos recibir&aacute;s un c&oacute;digo QR personal para el check-in el d&iacute;a del evento.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>C&oacute;mo elimino mi cuenta?</strong>
+      <p>Puedes eliminar tu cuenta desde la app en <strong>Perfil &rarr; Ajustes &rarr; Eliminar cuenta</strong>. Todos tus datos ser&aacute;n borrados en un plazo m&aacute;ximo de 30 d&iacute;as. Tambi&eacute;n puedes solicitarlo escribi&eacute;ndonos a <a href="mailto:hello@planeoeo.com">hello@planeoeo.com</a>.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>C&oacute;mo me convierto en Host?</strong>
+      <p>Ve a tu Perfil y selecciona "Ser Host". Introduce tu tel&eacute;fono de contacto y acepta las normas de conducta. A partir de ah&iacute; podr&aacute;s crear y gestionar tus propios eventos.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>C&oacute;mo reporto contenido inapropiado?</strong>
+      <p>Desde cualquier evento, post o perfil de usuario encontrar&aacute;s la opci&oacute;n de reportar contenido. Nuestro equipo revisar&aacute; el reporte en el menor tiempo posible.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="legal-links">
+    <h2>Documentos legales</h2>
+    <div class="legal-grid">
+      <a class="legal-link" href="./aviso-legal.html">Aviso Legal<span>Identificaci&oacute;n y normas</span></a>
+      <a class="legal-link" href="./privacy.html">Pol&iacute;tica de Privacidad<span>Protecci&oacute;n de datos</span></a>
+      <a class="legal-link" href="./terms.html">Condiciones de Uso<span>T&eacute;rminos del servicio</span></a>
+      <a class="legal-link" href="./condiciones-compra.html">Condiciones de Compra<span>Entradas y pagos</span></a>
+      <a class="legal-link" href="./cookies.html">Pol&iacute;tica de Cookies<span>Tecnolog&iacute;as de seguimiento</span></a>
+      <a class="legal-link" href="./devolucion.html">Devoluciones<span>Cancelaciones y reembolsos</span></a>
+      <a class="legal-link" href="./child-safety.html">Seguridad Infantil<span>Protecci&oacute;n de menores</span></a>
+      <a class="legal-link" href="./delete-account.html">Eliminar Cuenta<span>Borrado de datos</span></a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span class="logo-footer">Planeo</span>
+  &copy; 2026 Planeo. Todos los derechos reservados.<br>
+  <a href="./privacy.html">Privacidad</a> &middot;
+  <a href="./terms.html">Condiciones</a> &middot;
+  <a href="./privacy-en.html">Privacy (EN)</a> &middot;
+  <a href="./terms-en.html">Terms (EN)</a>
+</footer>
+
+</body>
+</html>      font-size: 1rem;
       color: #555;
       margin-bottom: 48px;
       line-height: 1.6;
